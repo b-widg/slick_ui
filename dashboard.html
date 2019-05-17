@@ -32,9 +32,9 @@
       media="screen,projection"
     />
   </head>
+
   <body>
-    
-    <body>
+    <header>
       <nav class="white" role="navigation">
         <div class="nav-wrapper container">
           <a href="./index.html ">
@@ -45,109 +45,169 @@
               class="brand-logo"
               style="max-height: 80%; margin-top: .75%"
           /></a>
-  
+
           <ul class="right hide-on-med-and-down">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./dashboard.html">Dashboard</a></li>
-            <li><a href="./userform.html">Log In</a></li>
-            <li><a href="./userform.html">Create Account</a></li>
+            <li><a href="./log-in.html">Log In</a></li>
+            <li><a href="./create-account.html">Create Account</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Sign Out</a></li>
           </ul>
-  
+
           <ul id="nav-mobile" class="sidenav">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./dashboard.html">Dashboard</a></li>
-            <li><a href="./userform.html">Log In</a></li>
-            <li><a href="./userform.html">Create Account</a></li>
+            <li><a href="./log-in.html">Log In</a></li>
+            <li><a href="./create-account.html">Create Account</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Sign Out</a></li>
           </ul>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
+            ><i class="material-icons black-text">menu</i></a
           >
         </div>
       </nav>
+    </header>
+    <main>
+    <div class="container">
 
-    <div class="container" style="height: 100vh">
-      <!-- COLLAPSIBLE -->
-      <h1>COLLAPSIBLE</h1>
-      <ul class="collapsible" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>First
+    <div class="row">
+      <!--Start Chat Column-->
+      <div class="col s12 m4 l4 right">
+          <div class="card blue-grey lighten-5">
+            <div class="card-content black-text">
+              <span class="card-title">Message Board</span>
+              <div id="chat-window">
+                  <ul><span></span>Sample Message</ul>
+                  <ul>Sample Message</ul>
+                  <ul>Sample Message</ul>
+                  <ul>Sample Message</ul>
+                  <ul>Sample Message</ul>
+              </div>
+              <div id="chat-window">
+                  <div id="output" style="min-height: 80%"></div>
+                  <div id="feedback"></div>
+              </div>
+              <input id="message" type="text" placeholder="Message" class="black-text" />
+              <button id="submit" class="btn-small waves-effect waves-light blue lighten-1 z-depth-1">Submit</button>
+            </div>
           </div>
-          <div class="collapsible-body">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Eligendi, totam?</span
-            >
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header active">
-            <i class="material-icons">filter_drama</i>Second
-          </div>
-          <div class="collapsible-body">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Eligendi, totam?</span
-            >
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>Third
-          </div>
-          <div class="collapsible-body">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Eligendi, totam?</span
-            >
-          </div>
-        </li>
-      </ul>
 
-      <!-- Floating Button -->
-      <!-- <a href="#" class="btn-floating red btn-large"
+
+        <!--Start Chat Window-->
+        <!-- <div class="col s12 m12 l12" style="border: 1px solid rgba(0, 0, 0, 0.7)">
+          <h2>Live Chat</h2>
+          <div id="chat-window">
+              <div id="output" style="min-height: 80%"></div>
+              <div id="feedback"></div>
+          </div>
+          <input id="handle" type="text" placeholder="Handle" />
+          <input id="message" type="text" placeholder="Message" />
+          <button id="send">Send</button>
+        </div> -->
+        <!--End Chat Window-->
+      </div><!--end chat column-->
+
+
+        <div class="col s12 m9 l8 left">
+          <!-- card 2 -->
+        <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-5">
+              <div class="card-content black-text">
+                <span class="card-title">Card Title 1</span>
+                <p>
+                  I am a very simple card. I am good at containing small bits of
+                  information. I am convenient because I require little markup
+                  to use effectively.
+                </p>
+              </div>
+              <div class="card-action">
+                  <button class="btn-small waves-effect waves-light blue lighten-1 z-depth-1">Update</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-5">
+                <div class="card-content black-text">
+                    <span class="card-title">Card Title 2</span>
+                    <p>
+                      I am a very simple card. I am good at containing small bits of
+                      information. I am convenient because I require little markup
+                      to use effectively.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <button class="btn-small waves-effect waves-light blue lighten-1 z-depth-1">Update</button>
+                </div>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col s12 m6 l6">
+            <div class="card blue-grey lighten-5">
+                <div class="card-content black-text">
+                    <span class="card-title">Card Title 3</span>
+                    <p>
+                      I am a very simple card. I am good at containing small bits of
+                      information. I am convenient because I require little markup to
+                      use effectively.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <button class="btn-small waves-effect waves-light blue lighten-1 z-depth-1">Update</button>
+                </div>
+          </div>
+        </div>
+        </div> <!--end card col-->
+
+        
+    </div> <!--end row-->
+
+        <!-- Floating Button -->
+        <!-- <a href="#" class="btn-floating red btn-large"
       ><i class="large material-icons">add</i></a
     > -->
-      <!-- Fixed Action Button -->
-      <div class="fixed-action-btn">
-        <a href="#" class="btn-floating red btn-large"
-          ><i class="large material-icons">create</i></a
-        >
-        <ul>
-          <li>
-            <a href="#" class="btn-floating yellow btn-large"
-              ><i class="large material-icons">insert_chart</i></a
-            >
-          </li>
-          <li>
-            <a href="#" class="btn-floating blue btn-large"
-              ><i class="large material-icons">format_quote</i></a
-            >
-          </li>
-          <li>
-            <a href="#" class="btn-floating green btn-large"
-              ><i class="large material-icons">publish</i></a
-            >
-          </li>
-          <li>
-            <a href="#" class="btn-floating orange btn-large"
-              ><i class="large material-icons">attach_file</i></a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
+        <!-- Fixed Action Button -->
+        <div class="fixed-action-btn">
+          <a href="#" class="btn-floating red btn-large"
+            ><i class="large material-icons">create</i></a
+          >
+          <ul>
+            <li>
+              <a href="#" class="btn-floating yellow btn-large"
+                ><i class="large material-icons">insert_chart</i></a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn-floating blue btn-large"
+                ><i class="large material-icons">format_quote</i></a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn-floating green btn-large"
+                ><i class="large material-icons">publish</i></a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn-floating orange btn-large"
+                ><i class="large material-icons">attach_file</i></a
+              >
+            </li>
+          </ul>
+        </div>
+      
+    </main>
     <footer class="page-footer blue">
       <div class="footer-copyright">
-        <div class="container">
-          Made by
-          <a class="orange-text text-lighten-3" href="http://materializecss.com"
-            >Materialize</a
-          >
+        <div class="row" style="max-height: 25px">
+          <img
+            src="./images/slick-white.svg"
+            alt=""
+            style="max-height:20px; display: inline-block"
+          />
+          <h5 class="white-text" style="display: inline-block">slick</h5>
         </div>
       </div>
     </footer>
@@ -157,13 +217,9 @@
     <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-
     <script>
       $(document).ready(function() {
         $(".fixed-action-btn").floatingActionButton();
-        $(".collapsible").collapsible({
-          accordion: false
-        });
       });
     </script>
   </body>
